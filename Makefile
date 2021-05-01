@@ -41,7 +41,8 @@ else
 endif
 
 build: docs
-	poetry build
+	rm -rf build
+	python setup.py sdist bdist_wheel
 
 publish: porcelain branch build
-	poetry publish
+	twine upload dist/*

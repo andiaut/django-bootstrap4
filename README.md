@@ -23,27 +23,27 @@ The full documentation is at https://django-bootstrap4.readthedocs.io/
 
 1. Install using pip:
 
-    ```shell script
-    pip install django-bootstrap4
-    ```
+```bash
+pip install django-bootstrap4
+```
    
    Alternatively, you can install download or clone this repo and call ``pip install -e .``.
 
 2. Add to `INSTALLED_APPS` in your `settings.py`:
 
-   ```python
-   INSTALLED_APPS = (
-       # ...
-       "bootstrap4",
-       # ...
-   )
-   ````
+```python
+INSTALLED_APPS = (
+  # ...
+  "bootstrap4",
+  # ...
+)
+```
 
-3. In your templates, load the `bootstrap4` library and use the `bootstrap_*` tags:
+3. In your templates, load the `bootstrap4` library and use the `bootstrap_*` tags. See example below.
 
 ## Example template
 
-```djangotemplate
+```jinja
 {% load bootstrap4 %}
 
 {# Display a form #}
@@ -57,28 +57,21 @@ The full documentation is at https://django-bootstrap4.readthedocs.io/
 </form>
 ```
 
-Demo
-----
+## Demo
 
 A demo app is provided in `demo`. You can run it from your virtualenv with `python manage.py runserver`.
 
-
-Bugs and suggestions
---------------------
+## Bugs and suggestions
 
 If you have found a bug or if you have a request for additional functionality, please use the issue tracker on GitHub.
 
 https://github.com/zostera/django-bootstrap4/issues
 
-
-License
--------
+## License
 
 You can use this under BSD-3-Clause. See [LICENSE](LICENSE) file for details.
 
-
-Author
-------
+## Author
 
 Developed and maintained by [Zostera](https://zostera.nl).
 
@@ -86,4 +79,4 @@ Original author: [Dylan Verheul](https://github.com/dyve).
 
 Thanks to everybody that has contributed pull requests, ideas, issues, comments and kind words.
 
-Please see [AUTHORS.md](AUTHORS.md) for a list of contributors.
+Please see [AUTHORS](AUTHORS) for a list of contributors.

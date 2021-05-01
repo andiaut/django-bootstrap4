@@ -1,8 +1,19 @@
 # Changelog
 
-## [2.3.2] - In development
+## [3.0.1] - 2021-05-01
 
-- Fix poetry build system configuration.
+- No line break in FileInput in horizontal layout.
+- Actually use the bundles JavaScript.
+
+## [3.0.0] - 2021-04-09
+
+- Drop support for Django 3.0, extended support stopped on 2021-04-01).
+- Add support for Django 3.2.
+- Use bundled Bootstrap JavaScript, no need for separate popper.js. 
+- Updated default Bootstrap to 4.6.0.
+- Add Dependabot for updates to dependencies.
+- Rename AUTHORS.md to AUTHORS, remove authors section from documentation.
+- Revert to setuptools for packaging.
 - Add Python 3.9 to Travis CI.
 - Add docs and tests to sdist.
 - Use GitHub Actions for CI.
